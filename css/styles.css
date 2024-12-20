@@ -19,10 +19,6 @@ h2 {
   font-size: 40px;
 }
 
-p {
-  hyphens: none;
-}
-
 /* ----Header Start---- */
 
 header {
@@ -31,17 +27,18 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Space out the logo and nav links */
+  align-items: center; /* Vertically center the items */
+  padding: 10px 20px; /* Add some padding for spacing */
   max-width: 1593px;
   margin: auto;
 }
 
+/* Styling the logo */
 nav .logo img {
-  height: 40px;
-  width: auto;
+  height: 40px; /* Adjust the height of the logo */
+  width: auto; /* Maintain aspect ratio */
 }
 
 .burger-menu {
@@ -51,29 +48,32 @@ nav .logo img {
   color: #191919;
 }
 
+/* Styling the navigation links */
 nav .nav-links {
-  list-style: none;
-  display: flex;
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Align the list items horizontally */
   margin: 0;
   padding: 0;
 }
 
+/* Styling each list item in the navigation */
 nav .nav-links li {
-  margin-left: 5px;
+  margin-left: 5px; /* Add space between items */
 }
 
 nav .nav-links a {
-  text-decoration: none;
-  color: #191919;
-  font-size: 18px;
-  font-weight: regular;
-  padding: 15px 20px;
-  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  color: #191919; /* White text color */
+  font-size: 18px; /* Font size */
+  font-weight: regular; /* Bold text */
+  padding: 15px 20px; /* Add padding for clickable area */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for the links */
 nav .nav-links a:hover {
-  background-color: #191919;
-  border-radius: 5px;
+  background-color: #191919; /* Darken the background on hover */
+  border-radius: 5px; /* Optional rounded corners */
   color: #f9f9f9;
 }
 
@@ -114,6 +114,7 @@ strong {
   gap: 20px;
   margin-top: -150px;
   height: 300px;
+  /* border: 1px solid black; */
 }
 
 .grid-item {
@@ -134,36 +135,41 @@ strong {
 /* a tags */
 
 .social-logo a {
-  display: inline-block;
-  position: relative;
-  width: 50px;
-  height: 50px;
+  display: inline-block;  /* Keeps the <a> tag as an inline element */
+  position: relative;     /* Required for absolute positioning of child elements */
+  width: 50px;            /* Set width of the <a> tag to match the image size */
+  height: 50px;           /* Set height of the <a> tag to match the image size */
 }
 
+/* Style for the <img> tag */
 .social-logo a img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.3s ease;
+  position: absolute;    /* Position both images on top of each other */
+  width: 100%;           /* Make images fill the <a> tag completely */
+  height: 100%;          /* Make images fill the <a> tag completely */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
 }
 
+/* Initially show the default GitHub logo */
 .social a img.default {
   opacity: 1;
 }
 
+/* On hover, hide the default image and show the hover image */
 .social a:hover img.default {
   opacity: 0;
 }
 
 a:hover img.hover {
-  opacity: 1;
+  opacity: 1;  /* Show the hover image */
 }
 
+/* Initially hide the hover image */
 a img.hover {
-  opacity: 0;
+  opacity: 0;  /* Make the hover image hidden initially */
 }
 
 /* a tags */
+
 
 .grid-item p {
   font-size: 20px;
@@ -268,12 +274,14 @@ a img.hover {
   justify-content: center;
   align-items: center;
   margin-top: 300px;
+  /* border: 10px solid red; */
 }
 
 .container-section3 {
   max-width: 1400px;
   padding: 20px;
   display: grid;
+  /* border: 10px solid red; */
 }
 
 .grid-section3-download-projects {
@@ -284,6 +292,7 @@ a img.hover {
 }
 
 .download {
+  /* border: 10px solid aqua; */
   padding: 30px;
   background-color: #efefef;
   margin-top: -280px;
@@ -341,11 +350,13 @@ a img.hover {
   height: 400px;
   width: auto;
   border-radius: 2px;
+  /* border: 10px solid red; */
 }
 
 .section3-content {
   margin-right: 30px;
   height: auto;
+  /* border: 10px solid red; */
 }
 
 .projects {
@@ -375,6 +386,7 @@ a img.hover {
 }
 
 .project-image {
+  /* border: 1px solid white; */
   height: auto;
 }
 
@@ -436,12 +448,12 @@ a img.hover {
 
 /* -------Forth Section Start------- */
 
+/* Container styles */
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 600px;
-  /* background: url('assets/cotact-bg.jpg') no-repeat center center fixed; */
   background: no-repeat center center fixed;
   background-color: #191919;
   background-size: cover;
@@ -449,6 +461,7 @@ a img.hover {
   overflow: hidden;
 }
 
+/* Parallax grid */
 .contact-grid {
   display: grid;
   gap: 20px;
@@ -460,6 +473,7 @@ a img.hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   background-color: rgba(77, 77, 77, 0.55);
   position: relative;
+  /* z-index: 1; */
 }
 
 .contact-item h2 {
@@ -533,6 +547,7 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: #030303;
+  /* background-color: #121212; */
   color: #ffffff;
 }
 
@@ -543,53 +558,328 @@ footer p {
 
 /* -------Footer End------- */
 
-/* ----------------------------------------Small screen desktops---------------------------------------- */
+/* ----------------------------------------Mobile devices---------------------------------------- */
 
-@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+  }
+
   /* Section 1 */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 10px 20px; */
-    max-width: 1919px;
+    max-width: 768px;
     margin: auto;
   }
+  #nav-links {
+    display: none;
+  }
 
-  .download {
-    width: 95%;
+  #nav-links.show {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #191919;
+    padding: 20px;
+  }
+
+  nav .nav-links li {
+    margin-top: 20px;
+  }
+
+  .nav-links.show {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  nav .nav-links a {
+    color: #f9f9f9;
+  }
+
+  .burger-menu {
+    display: block;
   }
 
   .container {
-    max-width: 1919px;
+    max-width: 768px;
     margin: auto;
     padding: 1rem;
+    /* border: 3px solid yellow; */
   }
+
+  .grid {
+    /* display: none; */
+    display: grid;
+    gap: 20px;
+    margin-top: -20px;
+    height: 100px;
+    /* border: 3px solid yellow; */
+  }
+
+  .grid-item {
+    height: 100px;
+    display: flex;
+    padding: 0px;
+    /* border: 1px solid black; */
+  }
+
+  .container p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 120%;
+  }
+
+  .container h1 {
+    font-size: 45px;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 10px;
+  }
+
+  .my-image {
+    order: 0;
+    height: 250px;
+  }
+
+  .based {
+    order: 2;
+    justify-content: center;
+    height: 10px;
+  }
+
+  .social {
+    order: 3;
+    justify-content: center;
+  }
+
+  .grid-item img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 400px;
+    width: auto;
+  }
+
+  .grid-item li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .grid-item .social-logo img {
+    height: 60px;
+    width: auto;
+  }
+  /* Section 1 */
+
+  /* Section 2 */
 
   .about-section {
     gap: 20px;
-    margin-top: 120px;
+    margin-top: 300px;
     /* border: 1px solid black; */
   }
 
-  .about-section {
-    margin-top: 120px;
-    /* border: 1px solid black; */
+  .container-section2 {
+    /* border: 3px solid rgb(0, 255, 213); */
+    flex: grid;
+    margin-top: 0px;
+    width: auto;
+    padding: 0px;
   }
-  /* section 3 */
+
+  .grid-section2 {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  .grid-item-section2 {
+    justify-content: center;
+    /* border: 3px solid red; */
+    height: 500px;
+    display: flex;
+  }
+
+  .about-image-container {
+    margin: 0;
+    padding: 0;
+    order: 0;
+  }
+
+  .about-skills-container {
+    /* border: 3px solid blue; */
+    order: 2;
+    height: auto;
+    /* display: none; */
+  }
+
+  .about-skills-item h2 {
+    /* border: 3px solid blue; */
+    text-align: center;
+  }
+
+  .about-skills-item p {
+    line-height: 130%;
+  }
+
+  .grid-item-section2 img {
+    height: 410px;
+    width: auto;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills-item img {
+    margin-top: 20px;
+    height: auto;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* display: none; */
+  }
+
+  .skills {
+    display: grid;
+  }
+
+  .skills-grid {
+    display: grid;
+  }
+
+  .skills-item {
+    margin-top: 20px;
+    justify-content: center;
+    /* border: 3px solid rgb(0, 255, 42); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
 
   .cv-section {
     /* display: none; */
     /* border: 3px solid black; */
-    max-width: 1919px;
-    margin-top: 320px;
+    max-width: 768px;
+    margin-top: 700px;
     padding: 1rem;
   }
 
+  .container-section3 {
+    /* border: 3px solid yellow; */
+    flex: grid;
+    margin-top: 0px;
+    width: auto;
+    padding: 0px;
+  }
+
+  .grid-section3-download-projects {
+    /* border: 3px solid aqua; */
+    flex: grid;
+  }
+
+  .download {
+    /* border: 3px solid rgb(0, 255, 42); */
+    flex: grid;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section3-items {
+    /* border: 3px solid red; */
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .grid-item-download img {
+    height: 250px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section3-content {
+    margin-top: 30px;
+    margin-right: 0px;
+    /* border: 3px solid red; */
+  }
+
+  .section3-content h2 {
+    text-align: center;
+  }
+
+  .section3-content p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .grid-item-download button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects {
+    /* display: none; */
+    flex: grid;
+    margin-top: 70px;
+    width: auto;
+    padding: 0px;
+    /* border: 3px solid white; */
+  }
+
+  .grid-projects {
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .grid-projects-item {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+  }
+
   .contact-section {
-    max-width: 1919px;
+    max-width: 768px;
     padding: 1rem;
     /* display: none; */
+  }
+
+  footer {
+    /* display: none; */
+  }
+}
+
+/* Laptop and wider screens */
+@media only screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -649,7 +939,7 @@ footer p {
   }
 
   .container {
-    max-width: 1279px;
+    max-width: 1279px; /* Adjusted container max-width */
     margin: auto;
     padding: 1rem;
   }
@@ -659,17 +949,19 @@ footer p {
     gap: 20px;
     margin-top: 80px;
     height: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Default to a single column (for small screens) */
     grid-template-rows: repeat(3, auto);
   }
 
+  /* Ensure all grid items adjust based on their content */
   .grid-item {
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     padding: 0;
     flex-direction: column;
+    /* border: 1px solid yellow; */
   }
 
   .container p {
@@ -902,21 +1194,25 @@ footer p {
     width: 100%;
     display: grid;
     justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
+    align-items: center; /* Set the container to use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    grid-template-rows: repeat(
+      2,
+      auto
+    ); /* Create 2 rows, height based on content */
+    gap: 20px; /* Add space between the items (optional, you can adjust the value) */
   }
 
   .grid-projects-item figure {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove default margins from figure */
+    padding: 0; /* Optional: Remove any extra padding */
+    /* Optional: Add border around each figure */
+    box-sizing: border-box; /* Make sure padding and borders are included in the element's size */
   }
 
   .grid-projects-item img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make the images fill the width of their container */
+    height: auto; /* Maintain aspect ratio of images */
   }
 
   .contact-section {
@@ -930,330 +1226,53 @@ footer p {
   }
 }
 
-/* ----------------------------------------Mobile Phone---------------------------------------- */
+/* ----------------------------------------Desktop and Laptops---------------------------------------- */
 
-@media only screen and (min-width: 430px) and (max-width: 768px) {
-  h2 {
-    font-size: 35px;
-  }
-
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
   /* Section 1 */
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 768px;
+    /* padding: 10px 20px; */
+    max-width: 1919px;
     margin: auto;
   }
-  #nav-links {
-    display: none;
-  }
 
-  #nav-links.show {
-    display: block;
-  }
 
-  .nav-links {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #191919;
-    padding: 20px;
-  }
-
-  nav .nav-links li {
-    margin-top: 20px;
-  }
-
-  .nav-links.show {
-    display: flex;
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-  }
-
-  nav .nav-links a {
-    color: #f9f9f9;
-  }
-
-  .burger-menu {
-    display: block;
+  .download{
+    width: 95%;
   }
 
   .container {
-    max-width: 768px;
+    max-width: 1919px; /* Adjusted container max-width */
     margin: auto;
     padding: 1rem;
-    /* border: 3px solid yellow; */
   }
-
-  .grid {
-    /* display: none; */
-    display: grid;
-    gap: 20px;
-    margin-top: -20px;
-    height: 100px;
-    /* border: 3px solid yellow; */
-  }
-
-  .grid-item {
-    height: 100px;
-    display: flex;
-    padding: 0px;
-    /* border: 1px solid black; */
-  }
-
-  .container p {
-    font-size: 16px;
-    text-align: center;
-    line-height: 120%;
-  }
-
-  /* .hero-section p{
-    font-size: 16px;
-  } */
-
-  strong {
-    background-color: #fef200;
-    padding: 2px 5px;
-  }
-
-  .container h1 {
-    font-size: 45px;
-    text-align: center;
-    line-height: 100%;
-    margin-top: 10px;
-  }
-
-  .my-image {
-    order: 0;
-    height: 250px;
-  }
-
-  .based {
-    order: 2;
-    justify-content: center;
-    height: 10px;
-  }
-
-  .social {
-    order: 3;
-    justify-content: center;
-  }
-
-  .grid-item img {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    height: 400px;
-    width: auto;
-  }
-
-  .grid-item li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .grid-item .social-logo img {
-    height: 60px;
-    width: auto;
-  }
-  /* Section 1 */
-
-  /* Section 2 */
 
   .about-section {
     gap: 20px;
-    margin-top: 300px;
+    margin-top: 120px;
     /* border: 1px solid black; */
   }
 
-  .container-section2 {
-    /* border: 3px solid rgb(0, 255, 213); */
-    flex: grid;
-    margin-top: 0px;
-    width: auto;
-    padding: 0px;
+  .about-section {
+    margin-top: 120px;
+    /* border: 1px solid black; */
   }
-
-  .grid-section2 {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-  }
-  .grid-item-section2 {
-    justify-content: center;
-    /* border: 3px solid red; */
-    height: 500px;
-    display: flex;
-  }
-
-  .about-image-container {
-    margin: 0;
-    padding: 0;
-    order: 0;
-  }
-
-  .about-skills-container {
-    /* border: 3px solid blue; */
-    order: 2;
-    height: auto;
-    /* display: none; */
-  }
-
-  .about-skills-item h2 {
-    /* border: 3px solid blue; */
-    text-align: center;
-  }
-
-  .about-skills-item p {
-    line-height: 130%;
-  }
-
-  .grid-item-section2 img {
-    height: 410px;
-    width: auto;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .skills-item img {
-    margin-top: 20px;
-    height: auto;
-    width: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    /* display: none; */
-  }
-
-  .skills {
-    display: grid;
-  }
-
-  .skills-grid {
-    display: grid;
-  }
-
-  .skills-item {
-    margin-top: 20px;
-    justify-content: center;
-    /* border: 3px solid rgb(0, 255, 42); */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-  }
+  /* section 3 */
 
   .cv-section {
     /* display: none; */
     /* border: 3px solid black; */
-    max-width: 768px;
-    margin-top: 700px;
+    max-width: 1919px;
+    margin-top: 320px;
     padding: 1rem;
-  }
-
-  .container-section3 {
-    /* border: 3px solid yellow; */
-    flex: grid;
-    margin-top: 0px;
-    width: auto;
-    padding: 0px;
-  }
-
-  .grid-section3-download-projects {
-    /* border: 3px solid aqua; */
-    flex: grid;
-  }
-
-  .download {
-    /* border: 3px solid rgb(0, 255, 42); */
-    flex: grid;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    justify-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: -200px;
-  }
-
-  .section3-items {
-    /* border: 3px solid red; */
-    flex-direction: column;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .grid-item-download img {
-    height: 250px;
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  .section3-content {
-    margin-top: 30px;
-    margin-right: 0px;
-    /* border: 3px solid red; */
-  }
-
-  .section3-content h2 {
-    text-align: center;
-  }
-
-  .section3-content p {
-    text-align: center;
-    font-size: 16px;
-    line-height: 120%;
-  }
-
-  .grid-item-download button {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .projects {
-    /* display: none; */
-    flex: grid;
-    margin-top: 70px;
-    width: auto;
-    padding: 0px;
-    /* border: 3px solid white; */
-  }
-
-  .grid-projects {
-    /* border: 3px solid yellow; */
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .grid-projects-item {
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 50px;
   }
 
   .contact-section {
-    max-width: 768px;
+    max-width: 1919px;
     padding: 1rem;
-    /* display: none; */
-  }
-
-  footer {
     /* display: none; */
   }
 }
