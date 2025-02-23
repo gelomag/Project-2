@@ -3,491 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- <link rel="stylesheet" href="css/mediaquery.css" /> -->
-    <title>Portfolio Dev Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Diet App 2025</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <img src="assets/logo.svg" alt="Logo" />
+          <img src="img/logo.svg" alt="Logo" />
         </div>
-        <div class="burger-menu" id="burger-menu">&#9776;</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about-section">About Me</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div>
+                <button class="btn-Get-Started btn-Get-Started-nav" onclick="window.location.href='main.html';">
+                    Get Strated
+                </button>
+        </div>
       </nav>
     </header>
 
-    <div class="container">
-      <section class="hero-section">
-        <p class="sub-header">
-          Hi! My name is <strong>Angelo Jay Magtibay</strong> and I am a
-        </p>
-        <h1>Full-stack<br />Web Developer</h1>
-        <div class="grid">
-          <div class="grid-item based">
-            <p>Based in Philippines</p>
-          </div>
-          <div class="grid-item my-image">
-            <img src="./assets/my-image.png" alt="AngeloImage" />
-          </div>
-          <div class="grid-item social">
-            <ul class="social-logo">
-              <li>
-                <a href="https://github.com/gelomag"
-                  ><img src="assets/git-logo.svg" alt="GitHub" /><img
-                    class="hover"
-                    src="assets/git-logo-hover.svg"
-                    alt="GitHub Hover"
-                /></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/ajmagtibay/"
-                  ><img src="assets/linkedin-logo.svg" alt="LinkedIn" /><img
-                    class="hover"
-                    src="assets/linkedin-logo-hover.svg"
-                    alt="GitHub Hover"
-                /></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/ajmagtibay/"
-                  ><img src="assets/facebook-logo.svg" alt="Facebook" /><img
-                    class="hover"
-                    src="assets/facebook-logo-hover.svg"
-                    alt="GitHub Hover"
-                /></a>
-              </li>
-              <li>
-                <a href="https://www.gmail.com/"
-                  ><img src="assets/email.svg" alt="Email" /><img
-                    class="hover"
-                    src="assets/email-hover.svg"
-                    alt="GitHub Hover"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-section" id="about-section">
-        <div class="container-section2">
-          <div class="grid-section2">
-            <div class="grid-item-section2 about-skills-container">
-              <div class="about-skills">
-                <div class="about-skills-item about">
-                  <h2>About Me</h2>
-                  <p>
-                    Hey, I’m Angelo, a graphic designer who's recently exploring the world of web development. I’m excited to combine my creative design skills with new coding knowledge to build visually stunning and user-friendly websites. I’m always eager to bring fresh ideas to life and learn new tools to enhance my work. I’m looking forward to taking on new projects and continuing to grow. Enjoy exploring my work!
-                  </p>
-                </div>
-                <div class="about-skills-item skills">
-                  <h2>Skills</h2>
-                  <div class="skills-grid">
-                    <div class="skills-item front">
-                      <h3>Front End</h3>
-                      <figure>
-                        <img src="assets/html.svg" alt="HTML" />
-                        <img src="assets/css.svg" alt="CSS" />
-                        <img src="assets/xd.svg" alt="Adobe XD" />
-                        <img src="assets/figma.svg" alt="FIGMA" />
-                      </figure>
-                    </div>
-                    <div class="skills-item back">
-                      <h3>Back End</h3>
-                      <figure>
-                        <img src="assets/nodejs.svg" alt="NodeJS" />
-                        <img src="assets/php.svg" alt="PHP" />
-                        <img src="assets/python.svg" alt="Python" />
-                        <img src="assets/ruby.svg" alt="Ruby" />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item-section2 about-image-container">
-              <figure>
-                <img src="assets/about-image.png" alt="About-Me" />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- ---------------------------------- Section 3 Start ---------------------------------- -->
-
-    <section class="cv-section" id="cv-section">
-      <div class="container-section3">
-        <div class="grid-section3-download-projects">
-          <div class="grid-section3 download" id="resume">
-            <div class="section3-items">
-              <div class="grid-item-download">
-                <figure>
-                  <img src="assets/download-image.png" alt="MyCV" />
-                </figure>
-              </div>
-              <div class="grid-item-download section3-content">
-                <h2>Download My CV</h2>
-                <p>
-                  Downloading my CV will give you a detailed overview of my skills, experience, and accomplishments, showcasing how I can contribute to your organization's success. With a strong background in Graphic Design and Web Development, I bring a proven track record of designing and developing websites, making me a valuable addition to your team.
-                </p>
-                <button class="icon-button" id="icon-button">
-                  Download
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    width="24px"
-                    fill="#e8eaed"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-section3 projects" id="project">
-          <h2>My Projects</h2>
-          <div class="grid-projects">
-            <div class="grid-projects-item">
-              <figure class="project-image">
-                <img src="assets/Project-1.png" alt="Project 1" />
-                <div class="project-button-container">
-                  <div class="project-button-grid">
-                    <div class="project-button-item">
-                      <button class="project-button" id="git1">
-                        View Git
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92pt"
-                          height="92pt"
-                          viewBox="0 0 92 92"
-                        >
-                          <defs>
-                            <clipPath id="a">
-                              <path d="M0 .113h91.887V92H0Zm0 0" />
-                            </clipPath>
-                          </defs>
-                          <g clip-path="url(#a)">
-                            <path
-                              style="
-                                stroke: none;
-                                fill-rule: nonzero;
-                                fill-opacity: 1;
-                              "
-                              d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
-                            />
-                          </g>
-                        </svg>
-                      </button>
-                      <button class="project-button" id="linkedin1">
-                        View LinkedIn
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <figure class="project-image">
-                <img src="assets/Project-2.png" alt="Project 2" />
-                <div class="project-button-container">
-                  <div class="project-button-grid">
-                    <div class="project-button-item">
-                      <button class="project-button" id="git2">
-                        View Git
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92pt"
-                          height="92pt"
-                          viewBox="0 0 92 92"
-                        >
-                          <defs>
-                            <clipPath id="a">
-                              <path d="M0 .113h91.887V92H0Zm0 0" />
-                            </clipPath>
-                          </defs>
-                          <g clip-path="url(#a)">
-                            <path
-                              style="
-                                stroke: none;
-                                fill-rule: nonzero;
-                                fill-opacity: 1;
-                              "
-                              d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
-                            />
-                          </g>
-                        </svg>
-                      </button>
-                      <button class="project-button" id="linkedin2">
-                        View LinkedIn
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <figure class="project-image">
-                <img src="assets/Project-3.png" alt="Project 3" />
-                <div class="project-button-container">
-                  <div class="project-button-grid">
-                    <div class="project-button-item">
-                      <button class="project-button" id="git3">
-                        View Git
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92pt"
-                          height="92pt"
-                          viewBox="0 0 92 92"
-                        >
-                          <defs>
-                            <clipPath id="a">
-                              <path d="M0 .113h91.887V92H0Zm0 0" />
-                            </clipPath>
-                          </defs>
-                          <g clip-path="url(#a)">
-                            <path
-                              style="
-                                stroke: none;
-                                fill-rule: nonzero;
-                                fill-opacity: 1;
-                              "
-                              d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
-                            />
-                          </g>
-                        </svg>
-                      </button>
-                      <button class="project-button" id="linkedin3">
-                        View LinkedIn
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <figure class="project-image">
-                <img src="assets/Project-4.png" alt="Project 4" />
-                <div class="project-button-container">
-                  <div class="project-button-grid">
-                    <div class="project-button-item">
-                      <button class="project-button" id="git4">
-                        View Git
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="92pt"
-                          height="92pt"
-                          viewBox="0 0 92 92"
-                        >
-                          <defs>
-                            <clipPath id="a">
-                              <path d="M0 .113h91.887V92H0Zm0 0" />
-                            </clipPath>
-                          </defs>
-                          <g clip-path="url(#a)">
-                            <path
-                              style="
-                                stroke: none;
-                                fill-rule: nonzero;
-                                fill-opacity: 1;
-                              "
-                              d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
-                            />
-                          </g>
-                        </svg>
-                      </button>
-                      <button class="project-button" id="linkedin4">
-                        View LinkedIn
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ---------------------------------- Section 3 End ---------------------------------- -->
-
-    <!-- ---------------------------------- Section 4 Start ---------------------------------- -->
-
-    <section
-      class="contact-section"
-      id="contact"
-      style="background-image: url('assets/contact-bg.jpg')"
-    >
-      <!--background-image is not working on external css.-->
-      <div class="contact-grid">
-        <div class="contact-item">
-          <h2>Get in Touch</h2>
-        </div>
-        <div class="contact-item">
-          <form
-            class="contact-form"
-            action="mailto:magtibayangelojay@gmail.com.com?subject=Subject%20Here&body=Body%20of%20the%20message%20here"
-            method="POST"
-            enctype="text/plain"
-          >
-            <input
-              type="text"
-              id="full-name"
-              name="full-name"
-              placeholder="Your Full Name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="example@domain.com"
-              required
-            />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Insert your Message"
-              rows="4"
-              cols="44"
-              required
-            ></textarea>
-            <button class="submit">
-              Submit
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-6"
-              >
-                <path
-                  d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z"
-                />
-              </svg>
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-grid">
+          <div class="hero-items hero-item-1">
+            <h1>
+              Start Your <span class="highlight">Path to Fitness</span> Now!
+            </h1>
+            <p>
+              Welcome to <strong>Diet App 2025</strong>, your personal guide to
+              healthier eating with customized meal plans, easy recipes, and
+              tracking tools.
+            </p>
+            <button class="btn-Get-Started btn-Get-Started-hero" onclick="window.location.href='main.html';">
+              Get Strated
             </button>
-          </form>
+            <div class="hero-item-icons-container">
+              <div class="hero-item-icons-grid">
+                <div class="hero-item-icons-items icon-1">
+                    <img src="img/icon 1.svg">
+                    <h3>Fitness Journey</h3>
+                </div>
+                <div class="hero-item-icons-items icon-2">
+                    <img src="img/icon 2.svg" class="static-image">
+                  <h3>Customized Meals</h3>
+                </div>
+                <div class="hero-item-icons-items icon-3">
+                    <img src="img/icon 3.svg">
+                    <h3>Experience AI</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-items hero-item-2">
+            <figure>
+                <img src="img/heroimg.png" alt="Icon">
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ---------------------------------- Section 4 End ---------------------------------- -->
+    <h1 class="fixed-text">PATH TO FITNESS</h1>
 
-    <footer>
-      <p>@ 2024 Gelo Magtibay Web. All rights reserved.</p>
-    </footer>
-
-    <script>
-      document
-        .getElementById("icon-button")
-        .addEventListener("click", function () {
-          window.open(
-            "https://drive.google.com/file/d/1fcBXzbG9Ry1X8vb90yxW04T-1hl2wiJz/view?usp=sharing",
-            "_blank"
-          ); // Opens Google in a new tab
-        });
-    </script>
-
-    <script>
-      document.getElementById("git1").addEventListener("click", function () {
-        window.open("https://github.com/gelomag", "_blank"); // Opens Google in a new tab
-      });
-    </script>
-
-    <script>
-      document
-        .getElementById("linkedin1")
-        .addEventListener("click", function () {
-          window.open("https://www.linkedin.com/in/ajmagtibay/", "_blank"); // Opens Google in a new tab
-        });
-    </script>
-
-    <script>
-      document.getElementById("git2").addEventListener("click", function () {
-        window.open("https://github.com/gelomag", "_blank"); // Opens Google in a new tab
-      });
-    </script>
-
-    <script>
-      document
-        .getElementById("linkedin2")
-        .addEventListener("click", function () {
-          window.open("https://www.linkedin.com/in/ajmagtibay/", "_blank"); // Opens Google in a new tab
-        });
-    </script>
-
-    <script>
-      document.getElementById("git3").addEventListener("click", function () {
-        window.open("https://github.com/gelomag", "_blank"); // Opens Google in a new tab
-      });
-    </script>
-
-    <script>
-      document
-        .getElementById("linkedin3")
-        .addEventListener("click", function () {
-          window.open("https://www.linkedin.com/in/ajmagtibay/", "_blank"); // Opens Google in a new tab
-        });
-    </script>
-
-    <script>
-      document.getElementById("git4").addEventListener("click", function () {
-        window.open("https://github.com/gelomag", "_blank"); // Opens Google in a new tab
-      });
-    </script>
-
-    <script>
-      document
-        .getElementById("linkedin4")
-        .addEventListener("click", function () {
-          window.open("https://www.linkedin.com/in/ajmagtibay/", "_blank"); // Opens Google in a new tab
-        });
-    </script>
-
-    <script src="js/script.js"></script>
+    <footer></footer>
   </body>
 </html>
