@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js" defer></script>
+    <title>Diet App 2025</title>
+  </head>
+  <body>
+    <!-- <script type="module" src="script.js"></script> -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo.svg" alt="Logo" />
+        </div>
+        <div>
+            <a href="index.html"><img class="home-img" src="img/home.svg" alt="Logo" /></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-container-main">
+        <div class="hero-grid-main">
+          <div class="hero-items-main hero-item-main-1">
+            <h2>Goal Setting and <span class="highlight">Diet Analization</span></h2>
+              <div class="form-grid">
+
+                <div class="form-item form-item-1">
+                    <div class="form" id="dietForm">
+                        <!-- <label for="height">Height (in cm):</label> -->
+                        <input type="number" id="height" placeholder="Height (in cm)" min="0" required>
+                        
+                        <!-- <label for="weight">Weight (in kg):</label> -->
+                        <input type="number" id="weight" placeholder="Weight (in kg)" min="0" required>
+                        
+                        <!-- <label for="age">Age:</label> -->
+                        <input type="number" id="age" placeholder="Age" min="0" required>
+                        
+                        <h3>Your Weight Goal</h3>
+                        <input type="number" id="goal" placeholder="Weight (in kg)" min="0" required>
+                        
+                        <button class="btn-Get-Started btn-Get-Started-hero" id="myButton">
+                          Analyze
+                        </button>
+                        
+                    </div>
+                </div>
+                <div class="form-item form-item-2">
+                  <div class="resultTitle"><h3 class="h3-results">Results</h3></div>
+                  <div id="resultContainer" class="result-container"></div>                  
+                </div>
+                
+            </div>
+            <div id="random-meal" class="random-meal"></div> <!-- For full recipe display -->
+          </div>
+          <div class="hero-items-main hero-item-main-2">
+            <h2>Diet Meal <span class="highlight">Suggestions</span></h2>
+            <div id="diet-meals"></div>
+              <div class="diet-meals-btn-container">
+                <div class="diet-meals-btn-grid">
+                  <div class="diet-meals-btn-items">
+                    <button id="btn-random-meal">Select For Me</button> <!-- Button for full recipe -->
+                  </div>
+                  <div class="diet-meals-btn-items">
+                    <button id="btn-refresh">Refresh</button> <!-- Button to refresh 4 recipes -->
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="fixed-text-2">Diet App 2025</h1>
+ 
+    <footer></footer>
+  </body>
+</html>
