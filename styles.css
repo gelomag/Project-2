@@ -66,6 +66,13 @@ nav {
     margin: auto;
 }
 
+.btn-Get-Started:disabled {
+    background-color: #ececec; 
+    color: #b0b0b0;
+    cursor: not-allowed;
+    border-color: #ececec;
+  }
+
 .btn-Get-Started {
     box-shadow: none;
     outline: none;
